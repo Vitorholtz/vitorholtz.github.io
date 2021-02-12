@@ -6,7 +6,17 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px red solid;
+    // border: 1px red solid;
+
+    .watermark {
+
+        font-size: 20rem;
+        color: $lightergray;
+        font-family: Bison-ThickOutline;
+        position: absolute;
+        top: 0;
+        right: 8rem;
+    }
 
 
 
@@ -15,18 +25,23 @@ section {
         flex-direction: column;
         max-width: 80rem;
         margin: 0 auto;
-        border: 1px rgb(0, 68, 255) solid;
+        // border: 1px rgb(0, 68, 255) solid;
 
         .tittle {
             display: flex;
             width: 100%;
             margin: 0 auto;
-            border: 1px rgb(0, 68, 255) solid;
+            // border: 1px rgb(0, 68, 255) solid;
         h1 {
     
-            font-size: 12rem;
+            font-size: 14rem;
             font-family: Bison-ThickOutline;
             align-self: left;
+
+            span {
+
+                color: $purple;
+            }
         }
     
         }
@@ -55,7 +70,8 @@ section {
 
     .description {
 
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        line-height: 1.6;
         width: 100%;
 
     }
@@ -96,6 +112,32 @@ section {
     }
 
   }
+
+  .websites-btn{
+      font-size: 8rem;
+      font-family: 'Bison';
+      position: absolute;
+      bottom: 8%;
+      right: 8%;
+      cursor: crosshair;
+      transition: .3s;
+
+      &:hover {
+          color: $purple;
+      }
+
+      .fa-chevron-down {
+        font-size: 3rem;
+        color: $lightgray;
+        opacity: .3;
+        animation: arrow 1s infinite ease-in-out;
+
+        @keyframes arrow {
+            from {transform: translateY(-1rem);}
+            to {transform: translateY( 1rem);}
+          }
+    }
+  }
 }
 
 @media only screen and (max-width: 130rem) {
@@ -116,5 +158,19 @@ section {
 
     html {
         font-size: 45.5%;
+    }
+}
+
+@media only screen and (max-width: 96rem) {
+
+    html {
+        font-size: 45.5%;
+    }
+}
+
+@media only screen and (max-width: 80rem) {
+
+    html {
+        font-size: 40.5%;
     }
 }

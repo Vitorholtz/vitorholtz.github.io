@@ -204,7 +204,7 @@ nav .navigation-bar {
           justify-content: center;
   padding: 2rem;
   font-family: 'Bison';
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 
 nav .navigation-bar li {
@@ -242,7 +242,7 @@ nav .social-icons {
   display: flex;
   position: absolute;
   bottom: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   gap: 2rem;
   padding: 2rem;
 }
@@ -269,7 +269,15 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px red solid;
+}
+
+section .watermark {
+  font-size: 20rem;
+  color: #343336;
+  font-family: Bison-ThickOutline;
+  position: absolute;
+  top: 0;
+  right: 8rem;
 }
 
 section .slider-and-description {
@@ -282,7 +290,6 @@ section .slider-and-description {
           flex-direction: column;
   max-width: 80rem;
   margin: 0 auto;
-  border: 1px #0044ff solid;
 }
 
 section .slider-and-description .tittle {
@@ -291,15 +298,18 @@ section .slider-and-description .tittle {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  border: 1px #0044ff solid;
 }
 
 section .slider-and-description .tittle h1 {
-  font-size: 12rem;
+  font-size: 14rem;
   font-family: Bison-ThickOutline;
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
+}
+
+section .slider-and-description .tittle h1 span {
+  color: #5A66FF;
 }
 
 section .slider-and-description .slider-and-description-container {
@@ -333,7 +343,8 @@ section .slider-and-description .slider-and-description-container .description-a
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button .description {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
   width: 100%;
 }
 
@@ -364,6 +375,51 @@ section .slider-and-description .slider-and-description-container .description-a
   width: 16rem;
 }
 
+section .websites-btn {
+  font-size: 8rem;
+  font-family: 'Bison';
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+  cursor: crosshair;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section .websites-btn:hover {
+  color: #5A66FF;
+}
+
+section .websites-btn .fa-chevron-down {
+  font-size: 3rem;
+  color: #E2E2E2;
+  opacity: .3;
+  -webkit-animation: arrow 1s infinite ease-in-out;
+          animation: arrow 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  to {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
 @media only screen and (max-width: 130rem) {
   html {
     font-size: 55.5%;
@@ -380,5 +436,55 @@ section .slider-and-description .slider-and-description-container .description-a
   html {
     font-size: 45.5%;
   }
+}
+
+@media only screen and (max-width: 96rem) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  html {
+    font-size: 40.5%;
+  }
+}
+
+.slider-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2rem;
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.slider-count .line {
+  display: block;
+  height: 40rem;
+  width: 1px;
+  background-color: #343336;
+}
+
+.slider-count .dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 1rem;
+  background-color: #FFFFFF;
+}
+
+.slider-count .dot:hover {
+  background-color: #5A66FF;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+.slider-count {
+
+    //border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+
+    .line {
+        display: block;
+        height: 40rem;
+        width: 1px;
+        background-color: $lightergray;
+    }
+
+    .dot {
+
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 1rem;
+        background-color: $white;
+
+        &:hover {
+
+            background-color: $purple;
+        }
+    }
+}

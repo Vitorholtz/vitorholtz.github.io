@@ -8,28 +8,44 @@ section {
     justify-content: center;
     border: 1px red solid;
 
-    h1 {
 
-        font-size: 10rem;
-        font-family: 'Bison';
-        margin: 0 auto;
-    }
 
-    .square-description {
+    .slider-and-description{
         display: flex;
+        flex-direction: column;
         max-width: 80rem;
         margin: 0 auto;
         border: 1px rgb(0, 68, 255) solid;
 
-    .square {
+        .tittle {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px rgb(0, 68, 255) solid;
+        h1 {
+    
+            font-size: 12rem;
+            font-family: 'Bison ThickOutline';
+            align-self: left;
+        }
+    
+        }
+
+    .slider-and-description-container {
+
+     display: flex;
+     width: 100%;
+
+    .slider {
 
         width:  45rem;
         height: 45rem;
+        padding: 14rem 8rem;
         border-radius: 1rem;
         background: rgb(255, 255, 255);
     }
 
-    .description-button {
+    .description-and-button{
 
         display: flex;
         flex-direction: column;
@@ -44,7 +60,63 @@ section {
 
     }
 
+    .btn {
+
+        border: none;
+        width: 17rem;
+        background-color: transparent;
+        color: $white;
+        font-family: 'Bison';
+        font-weight: 600;
+        font-size: 5em;
+        letter-spacing: 2px;
+        cursor: crosshair;
+        position: relative;
+
+        &::after {
+
+            content: '';
+            width: 3rem;
+            height: 2px;
+            background-color: $purple;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: .3s;
+        }
+
+        &:hover::after{
+
+            width: 100%;
+
+           }
+
+         }
+
+      }
+
     }
 
   }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    html {
+        font-size: 50.5%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    html {
+        font-size: 45.5%;
+    }
 }

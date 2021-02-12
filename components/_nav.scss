@@ -1,0 +1,205 @@
+nav {
+
+    height: 100vh;
+    width: 24rem;
+    background-color: $gray;
+    position: fixed;
+
+    .profile {
+
+        .profile-picture {
+
+            position: relative;
+            z-index: 11;
+
+            &::after {
+
+                content: '';
+                position: absolute;
+                bottom: 50%;
+                right: -3rem;
+                width: 4rem;
+                height: .4rem;
+                background: white;
+            }
+
+            .picture {
+
+                width: 100%;
+                filter: grayscale(100%);
+                
+            }
+
+            .logo {
+                width: 65%; 
+                position: absolute;
+                top: 36%;
+                left: 15%;
+
+
+            }
+
+            h2 {
+                position: absolute;
+                top: 1rem;
+                right: -19rem;
+                font-family: 'Bison';
+                font-weight: 600;
+                font-size: 5rem;
+                color: $gray;
+                line-height: .9;
+                z-index: -2;
+                animation: Myjob .7s ease-in-out;
+
+                @keyframes Myjob {
+                    from {transform: translateX(-18rem);}
+                    to {transform: translateX( 0rem);}
+                    
+                  }
+            }
+        }
+
+        .skills-toggle {
+
+            width: 100%;
+            padding: 2rem 1rem;
+            background-color: $lightergray;
+            position: relative; 
+            transform: translateY(-13.6rem);
+            transition: all 0.3s;
+            z-index: 10;
+
+            .skills {
+                display: flex;
+                flex-direction: column;
+
+                
+                .skill:first-child {
+
+                    margin-bottom: 2rem;
+                }
+
+
+                .skill {
+
+                    display: flex;
+                    font-family: 'Bison';
+                    font-weight: 600;
+                    font-size: 1.9rem;
+
+                
+
+                img {
+
+                    width: 2.5rem;
+                    margin-right: 1.6rem;
+                }
+              }
+            }
+
+            .skills-btn{
+                font-size: 1.6rem;
+                padding: 0 1rem;
+                background-color: $lightergray;
+                color: $white;
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                overflow: hidden;
+                cursor: crosshair;
+                transition: all 0.2s;
+
+                &::after {
+                    content: "";
+                    position:absolute;
+                    bottom: -6px;
+                    right: -6px;
+                    width:12px;
+                    height:12px;
+                    transform:rotate(45deg);
+                    background-color: $gray; /* to see where it is */
+                  }
+
+                &:hover {
+                    
+                    color: $purple;
+                }
+
+                .fas {
+                    font-size: 1rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .skills-toggle-active {
+
+            transform: translateY(-1rem);
+
+
+        }
+    }
+
+    .navigation-bar {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        font-family: 'Bison';
+        font-size: 3.5rem;
+        font-weight: 600;
+
+        li {
+            margin: 1rem 0;
+            position: relative;
+            border-bottom: 1px $bgblack solid;
+            transition: all .3s;
+            cursor: crosshair;
+
+
+            &::after {
+                content: '';
+                width: 3rem;
+                height: 2px;
+                background-color: $purple;
+                position: absolute;
+                bottom: -.1rem;
+                left: 0;
+                transition: all .3s;
+
+            }
+
+            &:hover {
+                
+                color: $purple;
+            }
+
+            &:hover::after {
+
+                background-color: $white;
+            }
+        }
+    }
+
+    .social-icons {
+
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.4rem;
+        gap: 2rem;
+        padding: 2rem;
+        
+
+        a {
+            cursor: crosshair;
+
+            &:hover {
+
+                color: $purple;
+            }
+        }
+
+    }
+}

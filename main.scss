@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Bison';
+    src: url(fonts/Bison-Regular.ttf) format("ttf");
+  }
+
+  @font-face {
+    font-family: 'Bison-bold';
+    src: url(fonts/Bison-Bold.ttf) format("ttf");
+  }
+
+  @font-face {
+    font-family: 'Bison-light';
+    src: url(fonts/Bison-Light.ttf) format("ttf");
+  }
+
+  @font-face {
+    font-family: 'Bison-outline';
+    src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
+  }
+
+  @import 'helpers/colors';
+  @import 'helpers/globals';  
+  @import 'components/nav';
+  @import 'components/sections';

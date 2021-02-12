@@ -1,0 +1,329 @@
+@font-face {
+  font-family: 'Bison';
+  src: url(fonts/Bison-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: 'Bison-bold';
+  src: url(fonts/Bison-Bold.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: 'Bison-light';
+  src: url(fonts/Bison-Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: 'Bison-outline';
+  src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #121214;
+}
+
+html {
+  font-family: 'Cairo', sans-serif;
+  color: #FFFFFF;
+  font-size: 62.5%;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+nav {
+  height: 100vh;
+  width: 24rem;
+  background-color: #1d1d1f;
+  position: fixed;
+}
+
+nav .profile .profile-picture {
+  position: relative;
+  z-index: 11;
+}
+
+nav .profile .profile-picture::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  right: -3rem;
+  width: 4rem;
+  height: .4rem;
+  background: white;
+}
+
+nav .profile .profile-picture .picture {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+nav .profile .profile-picture .logo {
+  width: 65%;
+  position: absolute;
+  top: 36%;
+  left: 15%;
+}
+
+nav .profile .profile-picture h2 {
+  position: absolute;
+  top: 1rem;
+  right: -19rem;
+  font-family: 'Bison';
+  font-weight: 600;
+  font-size: 5rem;
+  color: #1d1d1f;
+  line-height: .9;
+  z-index: -2;
+  -webkit-animation: Myjob .7s ease-in-out;
+          animation: Myjob .7s ease-in-out;
+}
+
+@-webkit-keyframes Myjob {
+  from {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+  }
+  to {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+}
+
+@keyframes Myjob {
+  from {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+  }
+  to {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+  }
+}
+
+nav .profile .skills-toggle {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #343336;
+  position: relative;
+  -webkit-transform: translateY(-13.6rem);
+          transform: translateY(-13.6rem);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+nav .profile .skills-toggle .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .profile .skills-toggle .skills .skill:first-child {
+  margin-bottom: 2rem;
+}
+
+nav .profile .skills-toggle .skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Bison';
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+nav .profile .skills-toggle .skills .skill img {
+  width: 2.5rem;
+  margin-right: 1.6rem;
+}
+
+nav .profile .skills-toggle .skills-btn {
+  font-size: 1.6rem;
+  padding: 0 1rem;
+  background-color: #343336;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  overflow: hidden;
+  cursor: crosshair;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav .profile .skills-toggle .skills-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #1d1d1f;
+  /* to see where it is */
+}
+
+nav .profile .skills-toggle .skills-btn:hover {
+  color: #5A66FF;
+}
+
+nav .profile .skills-toggle .skills-btn .fas {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+nav .profile .skills-toggle-active {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+nav .navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+  font-family: 'Bison';
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+nav .navigation-bar li {
+  margin: 1rem 0;
+  position: relative;
+  border-bottom: 1px #121214 solid;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: crosshair;
+}
+
+nav .navigation-bar li::after {
+  content: '';
+  width: 3rem;
+  height: 2px;
+  background-color: #5A66FF;
+  position: absolute;
+  bottom: -.1rem;
+  left: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav .navigation-bar li:hover {
+  color: #5A66FF;
+}
+
+nav .navigation-bar li:hover::after {
+  background-color: #FFFFFF;
+}
+
+nav .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.4rem;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+nav .social-icons a {
+  cursor: crosshair;
+}
+
+nav .social-icons a:hover {
+  color: #5A66FF;
+}
+
+section {
+  max-width: 100vw;
+  height: 100vh;
+  margin-left: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px red solid;
+}
+
+section h1 {
+  font-size: 10rem;
+  font-family: 'Bison';
+  margin: 0 auto;
+}
+
+section .square-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  border: 1px #0044ff solid;
+}
+
+section .square-description .square {
+  width: 45rem;
+  height: 45rem;
+  border-radius: 1rem;
+  background: white;
+}
+
+section .square-description .description-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin-left: 2rem;
+}
+
+section .square-description .description-button .description {
+  font-size: 1.6rem;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

@@ -236,7 +236,18 @@ nav .navigation-bar li:hover::after {
   background-color: #FFFFFF;
 }
 
-nav .social-icons {
+nav .navigation-bar .uxui-active {
+  -webkit-transform: translateX(20rem);
+          transform: translateX(20rem);
+}
+
+nav .navigation-bar .uxui-active::after {
+  content: '';
+  -webkit-transform: translateX(-40rem);
+          transform: translateX(-40rem);
+}
+
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,11 +258,11 @@ nav .social-icons {
   padding: 2rem;
 }
 
-nav .social-icons a {
+.social-icons a {
   cursor: crosshair;
 }
 
-nav .social-icons a:hover {
+.social-icons a:hover {
   color: #5A66FF;
 }
 
@@ -269,6 +280,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 section .watermark {
@@ -465,21 +477,22 @@ section .websites-btn .fa-chevron-down {
       -ms-flex-align: center;
           align-items: center;
   width: 2rem;
-  position: absolute;
+  position: fixed;
   right: 4rem;
-  top: 4rem;
+  top: 5rem;
 }
 
 .slider-count .line {
   display: block;
   height: 40rem;
   width: 1px;
+  margin: 1rem;
   background-color: #343336;
 }
 
 .slider-count .dot {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
   margin: 1rem;
   background-color: #FFFFFF;
 }

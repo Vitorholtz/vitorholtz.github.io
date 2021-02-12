@@ -13,3 +13,11 @@ skillsToggleBtn.addEventListener('click', () => {
 }
 
 });
+
+let navButtonUXUI = document.querySelector('.uxui')
+
+navButtonUXUI.addEventListener ('click', () => {
+
+    navButtonUXUI.classList.toggle ('uxui-active');
+})
+

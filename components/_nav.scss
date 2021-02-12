@@ -176,6 +176,19 @@ nav {
 
                 background-color: $white;
             }
+
+            }
+
+            .uxui-active {
+
+                transform: translateX(20rem);
+
+                &::after {
+
+                    content: '';
+                    transform: translateX(-40rem);
+                }
+            }
         }
     }
 
@@ -199,4 +212,3 @@ nav {
         }
 
     }
-}

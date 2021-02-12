@@ -43,8 +43,7 @@ nav {
                 position: absolute;
                 top: 1rem;
                 right: -19rem;
-                font-family: Bison-Bold;
-                font-weight: 600;
+                font-family: 'Bison';
                 font-size: 5rem;
                 color: $gray;
                 line-height: .9;
@@ -83,8 +82,7 @@ nav {
                 .skill {
 
                     display: flex;
-                    font-family: Bison-Bold;
-                    font-weight: 600;
+                    font-family: 'Bison';
                     font-size: 1.9rem;
 
                 
@@ -146,9 +144,8 @@ nav {
         flex-direction: column;
         justify-content: center;
         padding: 2rem;
-        font-family: Bison-Bold;
+        font-family: 'Bison';
         font-size: 3.5rem;
-        font-weight: 600;
 
         li {
             margin: 1rem 0;

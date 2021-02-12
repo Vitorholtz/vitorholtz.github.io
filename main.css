@@ -80,8 +80,7 @@ nav .profile .profile-picture h2 {
   position: absolute;
   top: 1rem;
   right: -19rem;
-  font-family: Bison-Bold;
-  font-weight: 600;
+  font-family: 'Bison';
   font-size: 5rem;
   color: #1d1d1f;
   line-height: .9;
@@ -142,8 +141,7 @@ nav .profile .skills-toggle .skills .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Bison-Bold;
-  font-weight: 600;
+  font-family: 'Bison';
   font-size: 1.9rem;
 }
 
@@ -205,9 +203,8 @@ nav .navigation-bar {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
-  font-family: Bison-Bold;
+  font-family: 'Bison';
   font-size: 3.5rem;
-  font-weight: 600;
 }
 
 nav .navigation-bar li {

@@ -1,20 +1,7 @@
 @font-face {
-  font-family: 'Bison';
+  font-family: Bison-Regular;
   src: url(fonts/Bison-Regular.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: 'Bison bold';
-  src: url(fonts/Bison-Bold.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: 'Bison light';
-  src: url(fonts/Bison-Light.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: 'Bison ThickOutline';
+  font-family: Bison-ThickOutline;
   src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
 }
 
@@ -309,7 +296,7 @@ section .slider-and-description .tittle {
 
 section .slider-and-description .tittle h1 {
   font-size: 12rem;
-  font-family: 'Bison ThickOutline';
+  font-family: Bison ThickOutline;
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
@@ -352,7 +339,6 @@ section .slider-and-description .slider-and-description-container .description-a
 
 section .slider-and-description .slider-and-description-container .description-and-button .btn {
   border: none;
-  width: 17rem;
   background-color: transparent;
   color: #FFFFFF;
   font-family: 'Bison';

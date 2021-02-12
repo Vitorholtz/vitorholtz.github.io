@@ -1,22 +1,11 @@
 @font-face {
-    font-family: 'Bison';
+    font-family: Bison-Regular;
     src: url(fonts/Bison-Regular.ttf) format("ttf");
-  }
 
-  @font-face {
-    font-family: 'Bison bold';
-    src: url(fonts/Bison-Bold.ttf) format("ttf");
-  }
-
-  @font-face {
-    font-family: 'Bison light';
-    src: url(fonts/Bison-Light.ttf) format("ttf");
-  }
-
-  @font-face {
-    font-family: 'Bison ThickOutline';
+    font-family: Bison-ThickOutline;
     src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
   }
+
 
   @import 'helpers/colors';
   @import 'helpers/globals';  

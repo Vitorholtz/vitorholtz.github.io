@@ -1,8 +1,6 @@
 @font-face {
-  font-family: Bison-regular;
-  src: url(fonts/Bison-Regular.ttf);
+  font-family: Bison-Bold;
   src: url(fonts/Bison-Bold.ttf);
-  src: url(fonts/Bison-Light.ttf);
 }
 
 @font-face {
@@ -82,7 +80,7 @@ nav .profile .profile-picture h2 {
   position: absolute;
   top: 1rem;
   right: -19rem;
-  font-family: Bison;
+  font-family: Bison-Bold;
   font-weight: 600;
   font-size: 5rem;
   color: #1d1d1f;
@@ -144,7 +142,7 @@ nav .profile .skills-toggle .skills .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Bison;
+  font-family: Bison-Bold;
   font-weight: 600;
   font-size: 1.9rem;
 }
@@ -207,7 +205,7 @@ nav .navigation-bar {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
-  font-family: Bison;
+  font-family: Bison-Bold;
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -346,7 +344,7 @@ section .slider-and-description .slider-and-description-container .description-a
   border: none;
   background-color: transparent;
   color: #FFFFFF;
-  font-family: Bison;
+  font-family: Bison-Bold;
   font-weight: 600;
   font-size: 5em;
   letter-spacing: 2px;

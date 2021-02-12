@@ -65,8 +65,7 @@ section {
         border: none;
         background-color: transparent;
         color: $white;
-        font-family: Bison-Bold;
-        font-weight: 600;
+        font-family: 'Bison';
         font-size: 5em;
         letter-spacing: 2px;
         cursor: crosshair;
@@ -86,7 +85,7 @@ section {
 
         &:hover::after{
 
-            width: 100%;
+            width: 16rem;
 
            }
 
@@ -99,21 +98,21 @@ section {
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 130rem) {
 
     html {
         font-size: 55.5%;
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 110rem) {
 
     html {
         font-size: 50.5%;
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 96rem) {
 
     html {
         font-size: 45.5%;

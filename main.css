@@ -1,8 +1,11 @@
 @font-face {
-  font-family: Bison-Regular;
-  src: url(fonts/Bison-Regular.ttf) format("ttf");
+  font-family: Bison;
+  src: url(fonts/Bison-Regular.ttf);
+}
+
+@font-face {
   font-family: Bison-ThickOutline;
-  src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
+  src: url(fonts/Bison-ThickOutline.ttf);
 }
 
 * {
@@ -77,7 +80,7 @@ nav .profile .profile-picture h2 {
   position: absolute;
   top: 1rem;
   right: -19rem;
-  font-family: 'Bison';
+  font-family: Bison;
   font-weight: 600;
   font-size: 5rem;
   color: #1d1d1f;
@@ -139,7 +142,7 @@ nav .profile .skills-toggle .skills .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Bison';
+  font-family: Bison;
   font-weight: 600;
   font-size: 1.9rem;
 }
@@ -202,7 +205,7 @@ nav .navigation-bar {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2rem;
-  font-family: 'Bison';
+  font-family: Bison;
   font-size: 3.5rem;
   font-weight: 600;
 }
@@ -296,7 +299,7 @@ section .slider-and-description .tittle {
 
 section .slider-and-description .tittle h1 {
   font-size: 12rem;
-  font-family: Bison ThickOutline;
+  font-family: Bison-ThickOutline;
   -ms-flex-item-align: left;
       -ms-grid-row-align: left;
       align-self: left;
@@ -341,7 +344,7 @@ section .slider-and-description .slider-and-description-container .description-a
   border: none;
   background-color: transparent;
   color: #FFFFFF;
-  font-family: 'Bison';
+  font-family: Bison;
   font-weight: 600;
   font-size: 5em;
   letter-spacing: 2px;

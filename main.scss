@@ -1,10 +1,16 @@
 @font-face {
-    font-family: Bison-Regular;
-    src: url(fonts/Bison-Regular.ttf) format("ttf");
+
+    font-family: Bison;
+    src: url(fonts/Bison-Regular.ttf);
+
+  }
+
+  @font-face {
 
     font-family: Bison-ThickOutline;
-    src: url(fonts/Bison-ThickOutline.ttf) format("ttf");
+    src: url(fonts/Bison-ThickOutline.ttf);
   }
+
 
 
   @import 'helpers/colors';

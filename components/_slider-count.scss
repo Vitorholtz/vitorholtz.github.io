@@ -12,7 +12,7 @@
 
     .line {
         display: block;
-        height: 40rem;
+        height: 39vh;
         width: 1px;
         margin: 1rem;
         background-color: $lightergray;
@@ -20,8 +20,8 @@
 
     .dot {
 
-        width: 1rem;
-        height: 1rem;
+        width: .8rem;
+        height: .8rem;
         margin: 1rem;
         background-color: $white;
 
@@ -31,3 +31,25 @@
         }
     }
 }
+
+//scroll bar
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $bgblack; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $white; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

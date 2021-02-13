@@ -337,6 +337,8 @@ section .slider-and-description .slider-and-description-container .slider {
   padding: 14rem 8rem;
   border-radius: 1rem;
   background: white;
+  -webkit-box-shadow: 6px 6px 0px 0px #5a66ff;
+          box-shadow: 6px 6px 0px 0px #5a66ff;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button {
@@ -351,7 +353,7 @@ section .slider-and-description .slider-and-description-container .description-a
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 50%;
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button .description {
@@ -432,36 +434,6 @@ section .websites-btn .fa-chevron-down {
   }
 }
 
-@media only screen and (max-width: 130rem) {
-  html {
-    font-size: 55.5%;
-  }
-}
-
-@media only screen and (max-width: 110rem) {
-  html {
-    font-size: 50.5%;
-  }
-}
-
-@media only screen and (max-width: 96rem) {
-  html {
-    font-size: 45.5%;
-  }
-}
-
-@media only screen and (max-width: 96rem) {
-  html {
-    font-size: 45.5%;
-  }
-}
-
-@media only screen and (max-width: 80rem) {
-  html {
-    font-size: 40.5%;
-  }
-}
-
 .slider-count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,20 +456,64 @@ section .websites-btn .fa-chevron-down {
 
 .slider-count .line {
   display: block;
-  height: 40rem;
+  height: 39vh;
   width: 1px;
   margin: 1rem;
   background-color: #343336;
 }
 
 .slider-count .dot {
-  width: 1rem;
-  height: 1rem;
+  width: .8rem;
+  height: .8rem;
   margin: 1rem;
   background-color: #FFFFFF;
 }
 
 .slider-count .dot:hover {
   background-color: #5A66FF;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 130rem) {
+  html {
+    font-size: 55.5%;
+  }
+}
+
+@media only screen and (max-width: 110rem) {
+  html {
+    font-size: 50.5%;
+  }
+}
+
+@media only screen and (max-width: 96rem) {
+  html {
+    font-size: 45.5%;
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  html {
+    font-size: 40.5%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

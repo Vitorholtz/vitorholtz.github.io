@@ -59,6 +59,7 @@ section {
         padding: 14rem 8rem;
         border-radius: 1rem;
         background: rgb(255, 255, 255);
+        box-shadow: 6px 6px 0px 0px rgba(90,102,255,1);
     }
 
     .description-and-button{
@@ -67,7 +68,7 @@ section {
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
-        margin-left: 2rem;
+        margin-left: 3rem;
 
     .description {
 
@@ -141,37 +142,3 @@ section {
   }
 }
 
-@media only screen and (max-width: 130rem) {
-
-    html {
-        font-size: 55.5%;
-    }
-}
-
-@media only screen and (max-width: 110rem) {
-
-    html {
-        font-size: 50.5%;
-    }
-}
-
-@media only screen and (max-width: 96rem) {
-
-    html {
-        font-size: 45.5%;
-    }
-}
-
-@media only screen and (max-width: 96rem) {
-
-    html {
-        font-size: 45.5%;
-    }
-}
-
-@media only screen and (max-width: 80rem) {
-
-    html {
-        font-size: 40.5%;
-    }
-}

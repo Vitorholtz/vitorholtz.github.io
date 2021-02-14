@@ -1,3 +1,5 @@
+// nav skills
+
 let skillsToggleBtn = document.querySelector('.skills-btn')
 let skillsToggle = document.querySelector('.skills-toggle')
 let skillsArrow = document.querySelector('.fa-chevron-down')
@@ -21,3 +23,16 @@ navButtonUXUI.addEventListener ('click', () => {
     navButtonUXUI.classList.toggle ('uxui-active');
 })
 
+// sliders
+
+var counter = 1
+
+setInterval(() => {
+
+    document.querySelector('#radio' + counter).checked = true;
+    counter++
+    if (counter > 4) {
+        counter = 1
+    }
+    
+}, 4000);

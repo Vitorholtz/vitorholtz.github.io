@@ -56,10 +56,107 @@ section {
 
         width:  45rem;
         height: 45rem;
-        padding: 14rem 8rem;
         border-radius: 1rem;
         background: rgb(255, 255, 255);
         box-shadow: 6px 6px 0px 0px rgba(90,102,255,1);
+        overflow: hidden;
+        position: relative;
+
+        .slides {
+
+            width: 500%;
+            height: 100%;
+            display: flex;
+
+            input {
+                display: none;
+                
+            }
+
+            .slide {
+
+                width: 20%;
+                padding: 9rem;
+                transition: 2s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // Manual navigation
+
+            #radio1:checked ~ .first {
+                margin-left: 0;
+            }
+            
+            #radio2:checked ~ .first {
+                margin-left: -20%;
+            }
+            
+            
+            #radio3:checked ~ .first {
+                margin-left: -40%;
+            }
+            
+            
+            #radio4:checked ~ .first {
+                margin-left: -60%;
+            }
+
+            // Auto navigation
+
+            .navigation-auto {
+    
+             position: absolute;
+             display: flex;
+             width: 40rem;
+             justify-content: center;
+             align-items: center;
+             margin-top: 40rem;
+
+             div {
+
+             border: none;
+             background: $lightgray;
+             padding: 5px;
+             transition: 1s;
+
+            &:not(:last-child) {
+
+            margin-right: 2.6rem;
+
+        }
+
+    }
+ 
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+
+    background: $purple ;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+
+    background: $purple;
+}
+
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+
+    background: $purple ;
+}
+
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+
+    background: $purple ;
+}
+
+}
+
     }
 
     .description-and-button{

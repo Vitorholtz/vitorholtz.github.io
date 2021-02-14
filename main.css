@@ -334,11 +334,95 @@ section .slider-and-description .slider-and-description-container {
 section .slider-and-description .slider-and-description-container .slider {
   width: 45rem;
   height: 45rem;
-  padding: 14rem 8rem;
   border-radius: 1rem;
   background: white;
   -webkit-box-shadow: 6px 6px 0px 0px #5a66ff;
           box-shadow: 6px 6px 0px 0px #5a66ff;
+  overflow: hidden;
+  position: relative;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides {
+  width: 500%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides input {
+  display: none;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .slide {
+  width: 20%;
+  padding: 9rem;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .navigation-auto {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40rem;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .navigation-auto div {
+  border: none;
+  background: #E2E2E2;
+  padding: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 2.6rem;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #5A66FF;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #5A66FF;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #5A66FF;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #5A66FF;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button {
@@ -434,6 +518,53 @@ section .websites-btn .fa-chevron-down {
   }
 }
 
+.websites {
+  position: relative;
+}
+
+.websites h2 {
+  font-size: 16rem;
+  color: #343336;
+  font-family: Bison-ThickOutline;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  z-index: -1;
+}
+
+.websites .websites-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+  gap: 4rem;
+  margin: auto;
+}
+
+.websites .websites-container .website {
+  max-width: 44rem;
+  border-radius: 10px;
+}
+
+.websites .websites-container .website img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 0px 0px #343336;
+          box-shadow: 6px 6px 0px 0px #343336;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.websites .websites-container .website img:hover {
+  -webkit-box-shadow: 6px 6px 0px 0px #5a66ff;
+          box-shadow: 6px 6px 0px 0px #5a66ff;
+}
+
 .slider-count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,7 +644,13 @@ section .websites-btn .fa-chevron-down {
 
 @media only screen and (max-width: 80rem) {
   html {
-    font-size: 40.5%;
+    font-size: 38.5%;
+  }
+}
+
+@media only screen and (max-width: 74rem) {
+  html {
+    font-size: 35.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */

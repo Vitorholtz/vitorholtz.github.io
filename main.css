@@ -48,6 +48,20 @@ nav {
   position: fixed;
 }
 
+nav::before {
+  content: '';
+  width: 5em;
+  height: 5em;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #121214;
+  border-left: 30px solid transparent;
+}
+
 nav .profile .profile-picture {
   position: relative;
   z-index: 11;
@@ -74,6 +88,8 @@ nav .profile .profile-picture .logo {
   position: absolute;
   top: 36%;
   left: 15%;
+  -webkit-animation: leftslide .6s ease-in-out;
+          animation: leftslide .6s ease-in-out;
 }
 
 nav .profile .profile-picture h2 {
@@ -85,30 +101,8 @@ nav .profile .profile-picture h2 {
   color: #1d1d1f;
   line-height: .9;
   z-index: -2;
-  -webkit-animation: Myjob .7s ease-in-out;
-          animation: Myjob .7s ease-in-out;
-}
-
-@-webkit-keyframes Myjob {
-  from {
-    -webkit-transform: translateX(-18rem);
-            transform: translateX(-18rem);
-  }
-  to {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
-}
-
-@keyframes Myjob {
-  from {
-    -webkit-transform: translateX(-18rem);
-            transform: translateX(-18rem);
-  }
-  to {
-    -webkit-transform: translateX(0rem);
-            transform: translateX(0rem);
-  }
+  -webkit-animation: leftslide 1.4s ease-in-out;
+          animation: leftslide 1.4s ease-in-out;
 }
 
 nav .profile .skills-toggle {
@@ -281,6 +275,8 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -webkit-animation: Opacity 2s ease-in-out;
+          animation: Opacity 2s ease-in-out;
 }
 
 section .watermark {
@@ -340,6 +336,7 @@ section .slider-and-description .slider-and-description-container .slider {
           box-shadow: 6px 6px 0px 0px #5a66ff;
   overflow: hidden;
   position: relative;
+  z-index: 100;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides {
@@ -351,7 +348,7 @@ section .slider-and-description .slider-and-description-container .slider .slide
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides input {
-  display: none;
+  display: block;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides .slide {
@@ -444,6 +441,13 @@ section .slider-and-description .slider-and-description-container .description-a
   font-size: 1.8rem;
   line-height: 1.6;
   width: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-43rem);
+          transform: translateX(-43rem);
+  -webkit-animation: leftslide 1.4s forwards;
+          animation: leftslide 1.4s forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button .btn {
@@ -455,6 +459,13 @@ section .slider-and-description .slider-and-description-container .description-a
   letter-spacing: 2px;
   cursor: crosshair;
   position: relative;
+  -webkit-transform: translateX(-18rem);
+          transform: translateX(-18rem);
+  opacity: 0;
+  -webkit-animation: leftslide 1.4s forwards;
+          animation: leftslide 1.4s forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button .btn::after {
@@ -497,24 +508,38 @@ section .websites-btn .fa-chevron-down {
 }
 
 @-webkit-keyframes arrow {
-  from {
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem);
+  0% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    opacity: 0;
   }
-  to {
+  50% {
     -webkit-transform: translateY(1rem);
             transform: translateY(1rem);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
   }
 }
 
 @keyframes arrow {
-  from {
-    -webkit-transform: translateY(-1rem);
-            transform: translateY(-1rem);
+  0% {
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    opacity: 0;
   }
-  to {
+  50% {
     -webkit-transform: translateY(1rem);
             transform: translateY(1rem);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
   }
 }
 
@@ -598,9 +623,15 @@ section .websites-btn .fa-chevron-down {
   height: .8rem;
   margin: 1rem;
   background-color: #FFFFFF;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 .slider-count .dot:hover {
+  background-color: #5A66FF;
+}
+
+.slider-count .dot1 {
   background-color: #5A66FF;
 }
 
@@ -651,6 +682,50 @@ section .websites-btn .fa-chevron-down {
 @media only screen and (max-width: 74rem) {
   html {
     font-size: 35.5%;
+  }
+}
+
+@-webkit-keyframes leftslide {
+  from {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@keyframes leftslide {
+  from {
+    -webkit-transform: translateX(-18rem);
+            transform: translateX(-18rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes Opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */

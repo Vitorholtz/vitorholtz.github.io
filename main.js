@@ -36,3 +36,25 @@ setInterval(() => {
     }
     
 }, 4000);
+
+// scroll animations
+
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    let position1 = 1; 
+    let position2 = 1200; 
+
+    if (currentScrollPos >= position2) {
+        document.querySelector(".dot2").style = 'background: #5A66FF';
+        document.querySelector(".dot1").style = 'background: white';
+
+    } else {
+
+        if (currentScrollPos <= position2)
+
+        document.querySelector(".dot1").style = 'background: #5A66FF';
+        document.querySelector(".dot2").style = 'background: white';
+
+    }
+}
+

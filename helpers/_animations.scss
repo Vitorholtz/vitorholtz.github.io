@@ -1,0 +1,11 @@
+@keyframes leftslide {
+    from {transform: translateX(-18rem); opacity: 0;}
+    to {transform: translateX( 0rem); opacity: 1;;}
+    
+  }
+
+  @keyframes Opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+  }

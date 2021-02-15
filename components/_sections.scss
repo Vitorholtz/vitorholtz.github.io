@@ -7,6 +7,7 @@ section {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    animation: Opacity 2s ease-in-out;
     // border: 1px red solid;
 
     .watermark {
@@ -61,6 +62,7 @@ section {
         box-shadow: 6px 6px 0px 0px rgba(90,102,255,1);
         overflow: hidden;
         position: relative;
+        z-index: 100;
 
         .slides {
 
@@ -69,7 +71,7 @@ section {
             display: flex;
 
             input {
-                display: none;
+                display: block;
                 
             }
 
@@ -172,6 +174,10 @@ section {
         font-size: 1.8rem;
         line-height: 1.6;
         width: 100%;
+        opacity: 0;
+        transform: translateX(-43rem);
+        animation: leftslide 1.4s forwards;
+        animation-delay: .5s;
 
     }
 
@@ -185,6 +191,11 @@ section {
         letter-spacing: 2px;
         cursor: crosshair;
         position: relative;
+        transform: translateX(-18rem);
+        opacity: 0;
+        animation: leftslide 1.4s forwards;
+        animation-delay: .5s;
+
 
         &::after {
 
@@ -232,8 +243,9 @@ section {
         animation: arrow 1s infinite ease-in-out;
 
         @keyframes arrow {
-            from {transform: translateY(-1rem);}
-            to {transform: translateY( 1rem);}
+            0% {transform: translateY(-3rem); opacity: 0;}
+            50% {transform: translateY( 1rem); opacity: .3;}
+            100% {transform: translateY( 1rem); opacity: 0;}
           }
     }
   }

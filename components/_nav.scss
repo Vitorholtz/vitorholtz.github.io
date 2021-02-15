@@ -5,6 +5,21 @@ nav {
     background-color: $gray;
     position: fixed;
 
+    &::before {
+        content: '';
+        width: 5em;
+        height: 5em;
+        background-color: transparent;
+        position: absolute;
+        bottom:0;
+        right:0;       
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid $bgblack;
+        border-left: 30px solid transparent;
+    }
+    
+
     .profile {
 
         .profile-picture {
@@ -35,6 +50,7 @@ nav {
                 position: absolute;
                 top: 36%;
                 left: 15%;
+                animation: leftslide .6s ease-in-out;
 
 
             }
@@ -48,13 +64,8 @@ nav {
                 color: $gray;
                 line-height: .9;
                 z-index: -2;
-                animation: Myjob .7s ease-in-out;
+                animation: leftslide 1.4s ease-in-out;
 
-                @keyframes Myjob {
-                    from {transform: translateX(-18rem);}
-                    to {transform: translateX( 0rem);}
-                    
-                  }
             }
         }
 

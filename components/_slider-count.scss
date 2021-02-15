@@ -24,11 +24,18 @@
         height: .8rem;
         margin: 1rem;
         background-color: $white;
+        transition: .4s;
 
         &:hover {
 
             background-color: $purple;
         }
+        
+    }
+
+    .dot1 {
+
+      background-color: $purple;
     }
 }
 

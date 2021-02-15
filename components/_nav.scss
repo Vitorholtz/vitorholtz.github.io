@@ -96,8 +96,6 @@ nav {
                     font-family: 'Bison';
                     font-size: 1.9rem;
 
-                
-
                 img {
 
                     width: 2.5rem;
@@ -163,7 +161,7 @@ nav {
             position: relative;
             border-bottom: 1px $bgblack solid;
             transition: all .3s;
-            cursor: crosshair;
+            
 
 
             &::after {
@@ -175,6 +173,20 @@ nav {
                 bottom: -.1rem;
                 left: 0;
                 transition: all .3s;
+                
+            }
+
+            &::before {
+
+                content: '';
+                width: .3rem;
+                height: 100%;
+                background-color: $purple;
+                position: absolute;
+                bottom: 0;
+                left: -22rem;
+                transition: all .3s;
+
 
             }
 
@@ -188,11 +200,17 @@ nav {
                 background-color: $white;
             }
 
+            a {
+
+                cursor: crosshair;
             }
 
-            .uxui-active {
+            }
+
+            .uxui-active, .branding-active, .digital-active, .impresso-active, .estudos-active {
 
                 transform: translateX(20rem);
+                
 
                 &::after {
 

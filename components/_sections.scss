@@ -71,7 +71,8 @@ section {
             display: flex;
 
             input {
-                display: block;
+                display: none;
+                z-index: 100;
                 
             }
 
@@ -79,7 +80,7 @@ section {
 
                 width: 20%;
                 padding: 9rem;
-                transition: 2s;
+                transition: 1s;
 
                 img {
                     width: 100%;
@@ -138,6 +139,7 @@ section {
 #radio1:checked ~ .navigation-auto .auto-btn1 {
 
     background: $purple ;
+    
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
@@ -155,6 +157,11 @@ section {
 #radio4:checked ~ .navigation-auto .auto-btn4 {
 
     background: $purple ;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
+
+    cursor: crosshair;
 }
 
 }

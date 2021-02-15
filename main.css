@@ -207,7 +207,6 @@ nav .navigation-bar li {
   border-bottom: 1px #121214 solid;
   -webkit-transition: all .3s;
   transition: all .3s;
-  cursor: crosshair;
 }
 
 nav .navigation-bar li::after {
@@ -222,6 +221,18 @@ nav .navigation-bar li::after {
   transition: all .3s;
 }
 
+nav .navigation-bar li::before {
+  content: '';
+  width: .3rem;
+  height: 100%;
+  background-color: #5A66FF;
+  position: absolute;
+  bottom: 0;
+  left: -22rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 nav .navigation-bar li:hover {
   color: #5A66FF;
 }
@@ -230,12 +241,16 @@ nav .navigation-bar li:hover::after {
   background-color: #FFFFFF;
 }
 
-nav .navigation-bar .uxui-active {
+nav .navigation-bar li a {
+  cursor: crosshair;
+}
+
+nav .navigation-bar .uxui-active, nav .navigation-bar .branding-active, nav .navigation-bar .digital-active, nav .navigation-bar .impresso-active, nav .navigation-bar .estudos-active {
   -webkit-transform: translateX(20rem);
           transform: translateX(20rem);
 }
 
-nav .navigation-bar .uxui-active::after {
+nav .navigation-bar .uxui-active::after, nav .navigation-bar .branding-active::after, nav .navigation-bar .digital-active::after, nav .navigation-bar .impresso-active::after, nav .navigation-bar .estudos-active::after {
   content: '';
   -webkit-transform: translateX(-40rem);
           transform: translateX(-40rem);
@@ -348,14 +363,15 @@ section .slider-and-description .slider-and-description-container .slider .slide
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides input {
-  display: block;
+  display: none;
+  z-index: 100;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides .slide {
   width: 20%;
   padding: 9rem;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides .slide img {
@@ -420,6 +436,10 @@ section .slider-and-description .slider-and-description-container .slider .slide
 
 section .slider-and-description .slider-and-description-container .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #5A66FF;
+}
+
+section .slider-and-description .slider-and-description-container .slider .slides .auto-btn1, section .slider-and-description .slider-and-description-container .slider .slides .auto-btn2, section .slider-and-description .slider-and-description-container .slider .slides .auto-btn3, section .slider-and-description .slider-and-description-container .slider .slides .auto-btn4 {
+  cursor: crosshair;
 }
 
 section .slider-and-description .slider-and-description-container .description-and-button {
@@ -583,6 +603,7 @@ section .websites-btn .fa-chevron-down {
           box-shadow: 6px 6px 0px 0px #343336;
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: crosshair;
 }
 
 .websites .websites-container .website img:hover {
@@ -628,10 +649,6 @@ section .websites-btn .fa-chevron-down {
 }
 
 .slider-count .dot:hover {
-  background-color: #5A66FF;
-}
-
-.slider-count .dot1 {
   background-color: #5A66FF;
 }
 

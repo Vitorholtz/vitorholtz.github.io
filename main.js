@@ -73,10 +73,10 @@ let navButtonEstudos = document.querySelector('.estudos')
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     let position1 = 1; 
-    let position2 = 1700; 
-    let position3 = 2800; 
-    let position4 = 3700; 
-    let position5 = 4500; 
+    let position2 = 1200; 
+    let position3 = 2200; 
+    let position4 = 3100; 
+    let position5 = 4000; 
 
     if (currentScrollPos >= position2) {
         document.querySelector(".dot2").style = 'background: #5A66FF';
@@ -165,8 +165,8 @@ window.onscroll = function () {
 
     }
 
-
 }
+
 
 
 

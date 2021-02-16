@@ -32,6 +32,43 @@
     html {
         font-size: 35.5%;
     }
+
+    section {
+
+        .slider-and-description{
+
+            .tittle{
+
+                h1 {
+
+                    font-size: 19rem;
+                }
+            }
+
+            .slider-and-description-container{
+
+                .slider{
+
+
+                }
+
+                .description-and-button {
+
+                    .description {
+
+                        font-size: 2.4rem;
+
+                    }
+
+                    .btn {  
+
+                        font-size: 7rem;
+
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -234,7 +271,7 @@
 
             a{
                 i{
-                    font-size: 4rem;
+                    font-size: 3.8rem;
                 }
             }
         }
@@ -248,6 +285,8 @@
 
     section {
 
+        height: 170rem;
+
         .watermark {
     
             display: none;
@@ -260,7 +299,7 @@
             .tittle {
 
                 h1 {
-                    line-height: 1;
+                    line-height: .9;
                 }
             }
 
@@ -325,6 +364,8 @@
         h2 {
             position: initial;
             color: white;
+            font-size: 14rem;
+            
             
         }
 

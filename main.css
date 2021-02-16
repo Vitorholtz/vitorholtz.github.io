@@ -871,13 +871,15 @@ section .websites-btn .fa-chevron-down {
   }
   section .slider-and-description .slider-and-description-container .description-and-button {
     width: 100%;
-    margin: 2rem auto;
+    margin: 4rem auto;
   }
   section .slider-and-description .slider-and-description-container .description-and-button .description {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
   section .slider-and-description .slider-and-description-container .description-and-button .btn {
     font-size: 8rem;
+    position: absolute;
+    bottom: 10%;
   }
   section .websites-btn {
     display: none;

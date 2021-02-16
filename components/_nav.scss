@@ -179,12 +179,12 @@ nav {
             &::before {
 
                 content: '';
-                width: .3rem;
+                width: 2.6rem;
                 height: 100%;
                 background-color: $purple;
                 position: absolute;
                 bottom: 0;
-                left: -22rem;
+                left: -19rem;
                 transition: all .3s;
 
 
@@ -209,7 +209,8 @@ nav {
 
             .uxui-active, .branding-active, .digital-active, .impresso-active, .estudos-active {
 
-                transform: translateX(20rem);
+                transform: translateX(15rem);
+                font-size: 6rem;
                 
 
                 &::after {
@@ -219,7 +220,7 @@ nav {
                 }
             }
         }
-    }
+    
 
     .social-icons {
 
@@ -241,3 +242,10 @@ nav {
         }
 
     }
+
+    .mobile-version {
+
+        display: none;
+    }
+
+}

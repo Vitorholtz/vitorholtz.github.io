@@ -850,8 +850,58 @@ section .websites-btn .fa-chevron-down {
   section .watermark {
     display: none;
   }
+  section .slider-and-description {
+    max-width: 95%;
+    margin: auto;
+  }
+  section .slider-and-description .tittle h1 {
+    line-height: 1;
+  }
+  section .slider-and-description .slider-and-description-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section .slider-and-description .slider-and-description-container .slider {
+    width: 100%;
+  }
+  section .slider-and-description .slider-and-description-container .slider .slides .navigation-auto {
+    width: 100%;
+  }
+  section .slider-and-description .slider-and-description-container .description-and-button {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  section .slider-and-description .slider-and-description-container .description-and-button .description {
+    font-size: 2.6rem;
+  }
+  section .slider-and-description .slider-and-description-container .description-and-button .btn {
+    font-size: 8rem;
+  }
+  section .websites-btn {
+    display: none;
+  }
   .slider-count {
     display: none;
+  }
+  .websites {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    height: auto;
+  }
+  .websites h2 {
+    position: initial;
+    color: white;
+  }
+  .websites .websites-container .website {
+    width: 100%;
+    max-width: none;
   }
 }
 

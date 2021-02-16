@@ -170,12 +170,12 @@ window.onscroll = function () {
 //hamburger menu 
 
 let hamburgerToggle = document.querySelector('.hamburger');
-let mobileMenu = document.querySelector('.mobile-navigation-bar')
+let mobileMenu = document.querySelector('.mobile-menu')
 
 hamburgerToggle.addEventListener('click', () => {
 
     hamburgerToggle.classList.toggle('hamburger-close');
-    mobileMenu.classList.toggle('mobile-navigation-bar-active');
+    mobileMenu.classList.toggle('mobile-menu-active');
 
 })
 

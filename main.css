@@ -376,14 +376,23 @@ section .slider-and-description .slider-and-description-container .slider .slide
 
 section .slider-and-description .slider-and-description-container .slider .slides .slide {
   width: 20%;
-  padding: 9rem;
   -webkit-transition: 1s;
   transition: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides .slide img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 70%;
 }
 
 section .slider-and-description .slider-and-description-container .slider .slides #radio1:checked ~ .first {
@@ -923,7 +932,10 @@ section .websites-btn .fa-chevron-down {
     width: 100%;
   }
   section .slider-and-description .slider-and-description-container .slider .slides .slide {
-    padding: 12rem;
+    padding: 0;
+  }
+  section .slider-and-description .slider-and-description-container .slider .slides .slide img {
+    width: auto;
   }
   section .slider-and-description .slider-and-description-container .description-and-button {
     width: 100%;

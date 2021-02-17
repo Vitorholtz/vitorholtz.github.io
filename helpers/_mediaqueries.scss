@@ -342,7 +342,12 @@
 
                         .slide {
 
-                            padding: 12rem;
+                            padding: 0;
+
+                            img {
+
+                                width: auto;
+                            }
                         }
                     }
                 }

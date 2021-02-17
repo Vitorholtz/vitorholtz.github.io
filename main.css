@@ -200,7 +200,6 @@ nav .navigation-bar {
           justify-content: center;
   padding: 2rem;
   font-family: 'Bison';
-  font-size: 3.8rem;
 }
 
 nav .navigation-bar li {
@@ -209,6 +208,7 @@ nav .navigation-bar li {
   border-bottom: 1px #121214 solid;
   -webkit-transition: all .3s;
   transition: all .3s;
+  font-size: 3.8rem;
 }
 
 nav .navigation-bar li::after {
@@ -703,9 +703,12 @@ section .websites-btn .fa-chevron-down {
   }
 }
 
-@media only screen and (max-width: 74rem) {
+@media only screen and (max-width: 800px) {
   html {
     font-size: 35.5%;
+  }
+  nav .navigation-bar li {
+    font-size: 6rem;
   }
   section .slider-and-description .tittle h1 {
     font-size: 19rem;

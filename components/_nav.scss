@@ -155,14 +155,13 @@ nav {
         justify-content: center;
         padding: 2rem;
         font-family: 'Bison';
-        font-size: 3.8rem;
 
         li {
             margin: 1rem 0;
             position: relative;
             border-bottom: 1px $bgblack solid;
             transition: all .3s;
-            
+            font-size: 3.8rem;
 
 
             &::after {

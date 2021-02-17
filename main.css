@@ -48,8 +48,6 @@ nav {
   position: fixed;
   -webkit-transition: 1s;
   transition: 1s;
-  -webkit-animation: navBar 1s forwards;
-          animation: navBar 1s forwards;
 }
 
 nav::before {
@@ -733,7 +731,7 @@ section .websites-btn .fa-chevron-down {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
   }
@@ -1036,28 +1034,6 @@ section .websites-btn .fa-chevron-down {
   100% {
     -webkit-transform: translate(-60rem, 120rem);
             transform: translate(-60rem, 120rem);
-  }
-}
-
-@-webkit-keyframes navBar {
-  0% {
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
-  }
-  100% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
-}
-
-@keyframes navBar {
-  0% {
-    -webkit-transform: translateY(-5rem);
-            transform: translateY(-5rem);
-  }
-  100% {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
   }
 }
 /*# sourceMappingURL=main.css.map */

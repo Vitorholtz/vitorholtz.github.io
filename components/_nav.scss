@@ -5,7 +5,6 @@ nav {
     background-color: $gray;
     position: fixed;
     transition: 1s;
-    animation: navBar 1s forwards;
 
     &::before {
         content: '';

@@ -90,7 +90,6 @@ window.onscroll = function () {
         navButtonImpresso.classList.remove('impresso-active');
         navButtonEstudos.classList.remove('estudos-active');
         
-        navBar.style = 'position: fixed;';
 
 
     } else {
@@ -106,7 +105,6 @@ window.onscroll = function () {
         navButtonImpresso.classList.remove('impresso-active');
         navButtonEstudos.classList.remove('estudos-active');
 
-        navBar.style = 'position: absolute;';
 
       }
         

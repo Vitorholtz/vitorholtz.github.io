@@ -26,3 +26,9 @@
     0% {transform: translateY(0rem);}
     100% {transform: translate(-60rem, 120rem);}
   }
+
+  @keyframes navBar {
+
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0rem);}
+  }

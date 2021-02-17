@@ -70,13 +70,15 @@ let navButtonEstudos = document.querySelector('.estudos')
 
 // scroll animations
 
+let navBar = document.querySelector('nav');
+
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     let position1 = 1; 
     let position2 = 1200; 
     let position3 = 2200; 
     let position4 = 3100; 
-    let position5 = 4000; 
+    let position5 = 4000;
 
     if (currentScrollPos >= position2) {
         document.querySelector(".dot2").style = 'background: #5A66FF';
@@ -87,6 +89,8 @@ window.onscroll = function () {
         navButtonDigital.classList.remove('digital-active');
         navButtonImpresso.classList.remove('impresso-active');
         navButtonEstudos.classList.remove('estudos-active');
+        
+        navBar.style = 'position: fixed;';
 
 
     } else {
@@ -101,6 +105,8 @@ window.onscroll = function () {
         navButtonDigital.classList.remove('digital-active');
         navButtonImpresso.classList.remove('impresso-active');
         navButtonEstudos.classList.remove('estudos-active');
+
+        navBar.style = 'position: absolute;';
 
       }
         

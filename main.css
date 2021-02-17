@@ -889,7 +889,6 @@ section .websites-btn .fa-chevron-down {
     left: 0%;
   }
   section {
-    height: 170rem;
     margin: 0;
   }
   section .watermark {
@@ -901,12 +900,14 @@ section .websites-btn .fa-chevron-down {
   }
   section .slider-and-description .tittle h1 {
     line-height: .9;
+    font-size: 18rem;
+    margin-bottom: 4rem;
   }
   section .slider-and-description .slider-and-description-container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   section .slider-and-description .slider-and-description-container .slider {
     width: 100%;
@@ -914,17 +915,19 @@ section .websites-btn .fa-chevron-down {
   section .slider-and-description .slider-and-description-container .slider .slides .navigation-auto {
     width: 100%;
   }
+  section .slider-and-description .slider-and-description-container .slider .slides .slide {
+    padding: 12rem;
+  }
   section .slider-and-description .slider-and-description-container .description-and-button {
     width: 100%;
-    margin: 4rem auto;
+    margin: auto;
   }
   section .slider-and-description .slider-and-description-container .description-and-button .description {
-    font-size: 3rem;
+    font-size: 2.6rem;
+    margin: 4rem auto 2rem auto;
   }
   section .slider-and-description .slider-and-description-container .description-and-button .btn {
     font-size: 8rem;
-    position: absolute;
-    bottom: 10%;
   }
   section .websites-btn {
     display: none;
@@ -939,7 +942,7 @@ section .websites-btn .fa-chevron-down {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: auto;
+    margin: 16rem auto;
     height: auto;
   }
   .websites h2 {

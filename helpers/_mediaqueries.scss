@@ -284,9 +284,8 @@
     }
 
     section {
-
-        height: 170rem;
-
+    
+        
         .watermark {
     
             display: none;
@@ -300,6 +299,8 @@
 
                 h1 {
                     line-height: .9;
+                    font-size: 18rem;
+                    margin-bottom: 4rem;
                 }
             }
 
@@ -308,7 +309,8 @@
 
             .slider-and-description-container {
 
-                flex-direction: column-reverse;
+                flex-direction: column;
+                
 
                 .slider {
 
@@ -321,24 +323,28 @@
                             width: 100%;
                         }
 
+                        .slide {
+
+                            padding: 12rem;
+                        }
                     }
                 }
 
                 .description-and-button {
 
                     width: 100%;
-                    margin: 4rem auto;
+                    margin: auto;
 
                     .description {
 
-                        font-size: 3rem;
+                        font-size: 2.6rem;
+                        margin: 4rem auto 2rem auto;
                     }
 
                     .btn {
 
                         font-size: 8rem;
-                        position: absolute;
-                        bottom: 10%;
+
                     }
                 }
             }     
@@ -360,17 +366,15 @@
 
         justify-content: center;
         align-items: center;
+        margin:  16rem auto;
+        height: auto;
 
         h2 {
             position: initial;
             color: white;
             font-size: 14rem;
-            
-            
+        
         }
-
-        margin:  auto;
-        height: auto;
 
         .websites-container {
 

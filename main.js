@@ -75,9 +75,9 @@ let navBar = document.querySelector('nav');
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     let position1 = 1; 
-    let position2 = 1100; 
-    let position3 = 2100; 
-    let position4 = 2900; 
+    let position2 = 1900; 
+    let position3 = 2300; 
+    let position4 = 3250; 
     let position5 = 4000;
 
     if (currentScrollPos >= position2) {

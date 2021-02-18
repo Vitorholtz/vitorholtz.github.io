@@ -75,10 +75,10 @@ let navBar = document.querySelector('nav');
 window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     let position1 = 1; 
-    let position2 = 1200; 
-    let position3 = 2200; 
+    let position2 = 1100; 
+    let position3 = 2100; 
     let position4 = 3100; 
-    let position5 = 4000;
+    let position5 = 3800;
 
     if (currentScrollPos >= position2) {
         document.querySelector(".dot2").style = 'background: #5A66FF';

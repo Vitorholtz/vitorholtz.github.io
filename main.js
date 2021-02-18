@@ -76,7 +76,7 @@ window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
     let position1 = 1; 
     let position2 = 900; 
-    let position3 = 2200; 
+    let position3 = 2400; 
     let position4 = 3000; 
     let position5 = 4000;
 

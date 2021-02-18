@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Bison';
-  src: url(/fonts/Bison-Bold.ttf);
+  src: url("/fonts/Bison-Bold.ttf");
 }
 
 @font-face {
   font-family: Bison-ThickOutline;
-  src: url(/fonts/Bison-ThickOutline.ttf);
+  src: url("/fonts/Bison-ThickOutline.ttf");
 }
 
 * {

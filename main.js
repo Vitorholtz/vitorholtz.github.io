@@ -77,7 +77,7 @@ window.onscroll = function () {
     let position1 = 1; 
     let position2 = 1100; 
     let position3 = 2100; 
-    let position4 = 3100; 
+    let position4 = 2900; 
     let position5 = 4000;
 
     if (currentScrollPos >= position2) {

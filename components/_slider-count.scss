@@ -19,23 +19,13 @@
     }
 
     .dot {
-      position: relative;
-
-      a {
-        width: 100%;
-        cursor: pointer;
-        position: absolute;
-        top:0;
-        z-index: 1000;
-        
       
-      }
-
-        width: .8rem;
-        height: .8rem;
-        margin: 1rem;
-        background-color: $white;
-        transition: .4s;
+      position: relative;
+      width: .8rem;
+      height: .8rem;
+      margin: 1rem;
+      background-color: $white;
+      transition: .4s;
 
         &:hover {
 

@@ -245,6 +245,7 @@ nav .navigation-bar li:hover::after {
 }
 
 nav .navigation-bar li a {
+  padding: 0 12rem 0 0;
   cursor: crosshair;
 }
 
@@ -719,14 +720,6 @@ section .ux-btn .fa-chevron-up {
   background-color: #FFFFFF;
   -webkit-transition: .4s;
   transition: .4s;
-}
-
-.slider-count .dot a {
-  width: 100%;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  z-index: 1000;
 }
 
 .slider-count .dot:hover {

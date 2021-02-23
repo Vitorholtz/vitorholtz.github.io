@@ -250,14 +250,42 @@ section {
         font-size: 3rem;
         color: $lightgray;
         opacity: .3;
-        animation: arrow 1s infinite ease-in-out;
+        animation: arrow1 1s infinite ease-in-out;
 
-        @keyframes arrow {
+        @keyframes arrow1 {
             0% {transform: translateY(-3rem); opacity: 0;}
             50% {transform: translateY( 1rem); opacity: .3;}
             100% {transform: translateY( 1rem); opacity: 0;}
           }
     }
   }
+
+  .ux-btn{
+    font-size: 8rem;
+    font-family: 'Bison';
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    cursor: crosshair;
+    transition: .3s;
+
+    &:hover {
+        color: $purple;
+    }
+
+    .fa-chevron-up {
+      font-size: 3rem;
+      color: $lightgray;
+      opacity: .3;
+      animation: arrow2 1s infinite ease-in-out;
+
+      @keyframes arrow2 {
+          0% {transform: translateY(0rem); opacity: 0;}
+          50% {opacity: .3;}
+          100% {transform: translateY( -3rem); opacity: 0;}
+        }
+  }
+}
+  
 }
 

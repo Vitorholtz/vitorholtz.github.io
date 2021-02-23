@@ -19,6 +19,17 @@
     }
 
     .dot {
+      position: relative;
+
+      a {
+        width: 100%;
+        cursor: pointer;
+        position: absolute;
+        top:0;
+        z-index: 1000;
+        
+      
+      }
 
         width: .8rem;
         height: .8rem;
@@ -31,6 +42,11 @@
             background-color: $purple;
         }
         
+    }
+
+    .dot1 {
+
+      background-color: $purple;
     }
 
 }

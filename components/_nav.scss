@@ -160,7 +160,7 @@ nav {
             margin: 1rem 0;
             position: relative;
             border-bottom: 1px $bgblack solid;
-            transition: all .3s;
+            transition: all .2s;
             font-size: 3.8rem;
 
 
@@ -172,7 +172,7 @@ nav {
                 position: absolute;
                 bottom: -.1rem;
                 left: 0;
-                transition: all .3s;
+                transition: all .2s;
                 
             }
 
@@ -185,7 +185,7 @@ nav {
                 position: absolute;
                 bottom: 0;
                 left: -19rem;
-                transition: all .3s;
+                transition: all .2s;
 
 
             }
@@ -207,7 +207,8 @@ nav {
 
             }
 
-            .uxui-active, .branding-active, .digital-active, .impresso-active, .estudos-active {
+            // active nav buttons
+            .active, .active, .active, .active, .active {
 
                 transform: translateX(15rem);
                 font-size: 6rem;
@@ -249,3 +250,5 @@ nav {
     }
 
 }
+
+

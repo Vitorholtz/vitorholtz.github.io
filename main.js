@@ -68,108 +68,92 @@ let navButtonDigital = document.querySelector('.digital')
 let navButtonImpresso= document.querySelector('.impresso')
 let navButtonEstudos = document.querySelector('.estudos')
 
+// dots 
+
+let dots = document.querySelector('.dot');
+let dot1 = document.querySelector('.dot1');
+let dot2 = document.querySelector('.dot2');
+let dot3 = document.querySelector('.dot3');
+let dot4 = document.querySelector('.dot4');
+let dot5 = document.querySelector('.dot5');
+
 // scroll animations
 
-let navBar = document.querySelector('nav');
+navButtonUXUI.addEventListener('click', () => {
 
-window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
-    let position1 = 1; 
-    let position2 = 900; 
-    let position3 = 2100; 
-    let position4 = 3065; 
-    let position5 = 4000;
+    navButtonUXUI.classList.add ('active');
+    navButtonBranding.classList.remove('active');
+    navButtonDigital.classList.remove('active');
+    navButtonImpresso.classList.remove('active');
+    navButtonEstudos.classList.remove('active');
 
-    if (currentScrollPos >= position2) {
-        document.querySelector(".dot2").style = 'background: #5A66FF';
-        document.querySelector(".dot1").style = 'background: white';
+    dot1.style = 'background-color: #5A66FF';
+    dot2.style = 'background-color: white';
+    dot3.style = 'background-color: white';
+    dot4.style = 'background-color: white';
+    dot5.style = 'background-color: white';
 
-        navButtonUXUI.classList.remove ('uxui-active');
-        navButtonBranding.classList.add('branding-active');
-        navButtonDigital.classList.remove('digital-active');
-        navButtonImpresso.classList.remove('impresso-active');
-        navButtonEstudos.classList.remove('estudos-active');
-        
+})
 
+navButtonBranding.addEventListener('click', () => {
 
-    } else {
+    navButtonUXUI.classList.remove ('active');
+    navButtonBranding.classList.add('active');
+    navButtonDigital.classList.remove('active');
+    navButtonImpresso.classList.remove('active');
+    navButtonEstudos.classList.remove('active');
 
-        if (currentScrollPos <= position2) {
+    dot1.style = 'background-color: white';
+    dot2.style = 'background-color: #5A66FF';
+    dot3.style = 'background-color: white';
+    dot4.style = 'background-color: white';
+    dot5.style = 'background-color: white';
+})
 
-        document.querySelector(".dot1").style = 'background: #5A66FF';
-        document.querySelector(".dot2").style = 'background: white';
+navButtonDigital.addEventListener('click', () => {
 
-        navButtonUXUI.classList.add ('uxui-active');
-        navButtonBranding.classList.remove('branding-active');
-        navButtonDigital.classList.remove('digital-active');
-        navButtonImpresso.classList.remove('impresso-active');
-        navButtonEstudos.classList.remove('estudos-active');
+    navButtonUXUI.classList.remove ('active');
+    navButtonBranding.classList.remove('active');
+    navButtonDigital.classList.add('active');
+    navButtonImpresso.classList.remove('active');
+    navButtonEstudos.classList.remove('active');
 
+    dot1.style = 'background-color: white';
+    dot2.style = 'background-color: white';
+    dot3.style = 'background-color: #5A66FF';
+    dot4.style = 'background-color: white';
+    dot5.style = 'background-color: white';
+})
 
-      }
-        
-    }
+navButtonImpresso.addEventListener('click', () => {
 
-    if(currentScrollPos > position3) {
+    navButtonUXUI.classList.remove ('active');
+    navButtonBranding.classList.remove('active');
+    navButtonDigital.classList.remove('active');
+    navButtonImpresso.classList.add('active');
+    navButtonEstudos.classList.remove('active');
 
-        document.querySelector(".dot3").style = 'background: #5A66FF';
-        document.querySelector(".dot2").style = 'background: white';
-        document.querySelector(".dot1").style = 'background: white';
+    dot1.style = 'background-color: white';
+    dot2.style = 'background-color: white';
+    dot3.style = 'background-color: white';
+    dot4.style = 'background-color: #5A66FF';
+    dot5.style = 'background-color: white';
+})
 
-        navButtonUXUI.classList.remove ('uxui-active');
-        navButtonBranding.classList.remove('branding-active');
-        navButtonDigital.classList.add('digital-active');
-        navButtonImpresso.classList.remove('impresso-active');
-        navButtonEstudos.classList.remove('estudos-active');
-    } else {
+navButtonEstudos.addEventListener('click', () => {
 
-        document.querySelector(".dot3").style = 'background: white';
+    navButtonUXUI.classList.remove ('active');
+    navButtonBranding.classList.remove('active');
+    navButtonDigital.classList.remove('active');
+    navButtonImpresso.classList.remove('active');
+    navButtonEstudos.classList.add('active');
 
-
-    }
-
-    if(currentScrollPos > position4) {
-
-        document.querySelector(".dot4").style = 'background: #5A66FF';
-        document.querySelector(".dot3").style = 'background: white';
-        document.querySelector(".dot2").style = 'background: white';
-        document.querySelector(".dot1").style = 'background: white';
-
-        navButtonUXUI.classList.remove ('uxui-active');
-        navButtonBranding.classList.remove('branding-active');
-        navButtonDigital.classList.remove('digital-active');
-        navButtonImpresso.classList.add('impresso-active');
-        navButtonEstudos.classList.remove('estudos-active');
-
-    } else {
-
-        document.querySelector(".dot4").style = 'background: white';
-
-
-    }
-
-    if(currentScrollPos >= position5) {
-
-        document.querySelector(".dot5").style = 'background: #5A66FF';
-        document.querySelector(".dot4").style = 'background: white';
-        document.querySelector(".dot3").style = 'background: white';
-        document.querySelector(".dot2").style = 'background: white';
-        document.querySelector(".dot1").style = 'background: white';
-
-        navButtonUXUI.classList.remove ('uxui-active');
-        navButtonBranding.classList.remove('branding-active');
-        navButtonDigital.classList.remove('digital-active');
-        navButtonImpresso.classList.remove('impresso-active');
-        navButtonEstudos.classList.add('estudos-active');
-        
-    } else {
-
-        document.querySelector(".dot5").style = 'background: white';
-
-
-    }
-
-}
+    dot1.style = 'background-color: white';
+    dot2.style = 'background-color: white';
+    dot3.style = 'background-color: white';
+    dot4.style = 'background-color: white';
+    dot5.style = 'background-color: #5A66FF';
+})
 
 //hamburger menu 
 

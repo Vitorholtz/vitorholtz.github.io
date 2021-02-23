@@ -87,6 +87,11 @@
 
 @media only screen and (max-width: 700px) {
 
+    body {
+
+        overflow-y: initial;
+    }
+
     html {
         font-size: 35.5%;
     }
@@ -146,6 +151,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                z-index: 101;
 
 
                 .line {
@@ -188,10 +194,13 @@
                 }
             }
 
-            img {
-
+            a {
                 width: 4.2rem;
-
+                z-index: 102;
+                transform: translateY(.5rem);
+                img {
+                    width: 100%;
+                }
             }
         }
 
@@ -202,7 +211,7 @@
             height: 100vh;
             width: 100vw;
             background: $gray;
-            z-index: -1;
+            z-index: 100;
             padding: 5rem;
             transition: .4s;
             display: flex;
@@ -294,10 +303,11 @@
         }
     }
 
-        .mobile-menu-active {
+    .mobile-menu-active {
 
-            left: 0%;
-        }
+        left: 0%;
+    }
+
     }
 
     section {

@@ -111,7 +111,7 @@ nav .profile .profile-picture h2 {
 nav .profile .skills-toggle {
   width: 100%;
   padding: 2rem 1rem;
-  background-color: #343336;
+  background-color: #29282b;
   position: relative;
   -webkit-transform: translateY(-13.6rem);
           transform: translateY(-13.6rem);
@@ -150,7 +150,7 @@ nav .profile .skills-toggle .skills .skill img {
 nav .profile .skills-toggle .skills-btn {
   font-size: 1.6rem;
   padding: 0 1rem;
-  background-color: #343336;
+  background-color: #29282b;
   color: #FFFFFF;
   position: absolute;
   bottom: -3rem;
@@ -778,8 +778,27 @@ section .ux-btn .fa-chevron-up {
   html {
     font-size: 35.5%;
   }
+  nav .profile .skills-toggle {
+    -webkit-transform: translateY(-16.4rem);
+            transform: translateY(-16.4rem);
+  }
+  nav .profile .skills-toggle .skills .skill {
+    font-size: 2.2rem;
+  }
+  nav .profile .skills-toggle .skills-btn {
+    font-size: 2.2rem;
+    bottom: -4rem;
+  }
+  nav .profile .skills-toggle-active {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
   nav .navigation-bar li {
-    font-size: 6rem;
+    font-size: 5rem;
+  }
+  nav .social-icons {
+    font-size: 2.2rem;
+    gap: 4rem;
   }
   section .slider-and-description .tittle h1 {
     font-size: 19rem;
@@ -1021,6 +1040,9 @@ section .ux-btn .fa-chevron-up {
     font-size: 8rem;
   }
   section .websites-btn {
+    display: none;
+  }
+  section .ux-btn {
     display: none;
   }
   .slider-count {

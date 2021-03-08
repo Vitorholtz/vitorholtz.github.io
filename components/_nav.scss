@@ -199,13 +199,14 @@ nav {
             }
 
             a {
-                padding: 0 12rem 0 0;
+                padding: 0 10rem 0 0;
                 cursor: crosshair;
 
                 i {
                     font-size: 2.6rem;
                     transform: translateY(-.3rem);
                     margin-right: 1.4rem;
+                    
                 }
             }
 
@@ -221,19 +222,6 @@ nav {
 
                     content: '';
                     transform: translateX(-40rem);
-                }
-            }
-        }
-
-        // Full Bio
-        .navigation-bar:nth-child(3){
-
-            margin-top: 16rem;
-
-            li {
-
-                a {
-                    padding: 0 10rem 0 0;
                 }
             }
         }

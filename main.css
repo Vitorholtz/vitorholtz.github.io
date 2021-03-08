@@ -245,7 +245,7 @@ nav .navigation-bar li:hover::after {
 }
 
 nav .navigation-bar li a {
-  padding: 0 12rem 0 0;
+  padding: 0 10rem 0 0;
   cursor: crosshair;
 }
 
@@ -266,14 +266,6 @@ nav .navigation-bar .active::after {
   content: '';
   -webkit-transform: translateX(-40rem);
           transform: translateX(-40rem);
-}
-
-nav .navigation-bar:nth-child(3) {
-  margin-top: 16rem;
-}
-
-nav .navigation-bar:nth-child(3) li a {
-  padding: 0 10rem 0 0;
 }
 
 nav .social-icons {

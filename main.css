@@ -1183,7 +1183,7 @@ article .bio-container .picture-and-description .description {
   }
   article {
     width: 90%;
-    margin: auto;
+    margin: 0 auto 24rem auto;
   }
   article .watermark {
     display: none;

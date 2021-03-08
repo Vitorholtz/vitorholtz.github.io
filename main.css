@@ -249,16 +249,31 @@ nav .navigation-bar li a {
   cursor: crosshair;
 }
 
-nav .navigation-bar .active, nav .navigation-bar .active, nav .navigation-bar .active, nav .navigation-bar .active, nav .navigation-bar .active {
+nav .navigation-bar li a i {
+  font-size: 2.6rem;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  margin-right: 1.4rem;
+}
+
+nav .navigation-bar .active {
   -webkit-transform: translateX(15rem);
           transform: translateX(15rem);
   font-size: 6rem;
 }
 
-nav .navigation-bar .active::after, nav .navigation-bar .active::after, nav .navigation-bar .active::after, nav .navigation-bar .active::after, nav .navigation-bar .active::after {
+nav .navigation-bar .active::after {
   content: '';
   -webkit-transform: translateX(-40rem);
           transform: translateX(-40rem);
+}
+
+nav .navigation-bar:nth-child(3) {
+  margin-top: 16rem;
+}
+
+nav .navigation-bar:nth-child(3) li a {
+  padding: 0 10rem 0 0;
 }
 
 nav .social-icons {
@@ -750,6 +765,89 @@ section .ux-btn .fa-chevron-up {
   background: #555;
 }
 
+article {
+  max-width: 100vw;
+  height: 100vh;
+  margin-left: 24rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-animation: Opacity 2s ease-in-out;
+          animation: Opacity 2s ease-in-out;
+}
+
+article .watermark {
+  font-size: 20rem;
+  color: #343336;
+  font-family: Bison-ThickOutline;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+}
+
+article .bio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+article .bio-container .tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .bio-container .tittle h1 {
+  font-size: 14rem;
+  font-family: Bison-ThickOutline;
+}
+
+article .bio-container .tittle h1 span {
+  color: #5A66FF;
+}
+
+article .bio-container .picture-and-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+article .bio-container .picture-and-description .picture {
+  -webkit-box-shadow: 6px 6px 0px 0px white;
+          box-shadow: 6px 6px 0px 0px white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+article .bio-container .picture-and-description .picture:hover {
+  -webkit-box-shadow: 6px 6px 0px 0px #5a66ff;
+          box-shadow: 6px 6px 0px 0px #5a66ff;
+}
+
+article .bio-container .picture-and-description .picture .picture-img {
+  width: 100%;
+}
+
+article .bio-container .picture-and-description .description {
+  font-size: 1.8rem;
+  width: 50rem;
+}
+
 @media only screen and (max-width: 130rem) {
   html {
     font-size: 55.5%;
@@ -808,6 +906,22 @@ section .ux-btn .fa-chevron-up {
   }
   section .slider-and-description .slider-and-description-container .description-and-button .btn {
     font-size: 7rem;
+  }
+  article .bio-container .tittle h1 {
+    z-index: 100;
+  }
+  article .bio-container .picture-and-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  article .bio-container .picture-and-description .picture {
+    width: 60rem;
+  }
+  article .bio-container .picture-and-description .description {
+    font-size: 2.4rem;
+    width: 100%;
   }
 }
 
@@ -1066,6 +1180,30 @@ section .ux-btn .fa-chevron-up {
   .websites .websites-container .website {
     width: 100%;
     max-width: none;
+  }
+  article {
+    width: 90%;
+    margin: auto;
+  }
+  article .watermark {
+    display: none;
+  }
+  article .bio-container .tittle h1 {
+    font-size: 13rem;
+  }
+  article .bio-container .picture-and-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  article .bio-container .picture-and-description .picture {
+    width: 100%;
+  }
+  article .bio-container .picture-and-description .description {
+    width: 100%;
+    margin: auto;
+    font-size: 2.6rem;
   }
 }
 

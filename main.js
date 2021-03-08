@@ -67,6 +67,7 @@ let navButtonBranding = document.querySelector('.branding')
 let navButtonDigital = document.querySelector('.digital')
 let navButtonImpresso= document.querySelector('.impresso')
 let navButtonEstudos = document.querySelector('.estudos')
+let navButtonBio = document.querySelector('.fullbio')
 
 // dots 
 
@@ -86,6 +87,7 @@ navButtonUXUI.addEventListener('click', () => {
     navButtonDigital.classList.remove('active');
     navButtonImpresso.classList.remove('active');
     navButtonEstudos.classList.remove('active');
+    navButtonBio.classList.remove('active');
 
     dot1.style = 'background-color: #5A66FF';
     dot2.style = 'background-color: white';
@@ -102,6 +104,7 @@ navButtonBranding.addEventListener('click', () => {
     navButtonDigital.classList.remove('active');
     navButtonImpresso.classList.remove('active');
     navButtonEstudos.classList.remove('active');
+    navButtonBio.classList.remove('active');
 
     dot1.style = 'background-color: white';
     dot2.style = 'background-color: #5A66FF';
@@ -117,6 +120,7 @@ navButtonDigital.addEventListener('click', () => {
     navButtonDigital.classList.add('active');
     navButtonImpresso.classList.remove('active');
     navButtonEstudos.classList.remove('active');
+    navButtonBio.classList.remove('active');
 
     dot1.style = 'background-color: white';
     dot2.style = 'background-color: white';
@@ -132,6 +136,7 @@ navButtonImpresso.addEventListener('click', () => {
     navButtonDigital.classList.remove('active');
     navButtonImpresso.classList.add('active');
     navButtonEstudos.classList.remove('active');
+    navButtonBio.classList.remove('active');
 
     dot1.style = 'background-color: white';
     dot2.style = 'background-color: white';
@@ -147,6 +152,23 @@ navButtonEstudos.addEventListener('click', () => {
     navButtonDigital.classList.remove('active');
     navButtonImpresso.classList.remove('active');
     navButtonEstudos.classList.add('active');
+    navButtonBio.classList.remove('active');
+
+    dot1.style = 'background-color: white';
+    dot2.style = 'background-color: white';
+    dot3.style = 'background-color: white';
+    dot4.style = 'background-color: white';
+    dot5.style = 'background-color: #5A66FF';
+})
+
+navButtonBio.addEventListener('click', () => {
+
+    navButtonUXUI.classList.remove ('active');
+    navButtonBranding.classList.remove('active');
+    navButtonDigital.classList.remove('active');
+    navButtonImpresso.classList.remove('active');
+    navButtonEstudos.classList.remove('active');
+    navButtonBio.classList.add('active');
 
     dot1.style = 'background-color: white';
     dot2.style = 'background-color: white';

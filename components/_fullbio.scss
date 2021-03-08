@@ -1,0 +1,76 @@
+article {
+
+    max-width: 100vw;
+    height: 100vh;
+    margin-left: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    animation: Opacity 2s ease-in-out;
+    // border: 1px red solid;
+
+    .watermark {
+
+        font-size: 20rem;
+        color: $lightergray;
+        font-family: Bison-ThickOutline;
+        position: absolute;
+        top: 0;
+        right: 8rem;
+    }
+
+
+  .bio-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    .tittle {
+        display: flex;
+        // border: 1px rgb(0, 68, 255) solid;
+        
+    h1 {
+
+        font-size: 14rem;
+        font-family: Bison-ThickOutline;
+
+        span {
+
+            color: $purple;
+        }
+    }
+  }
+
+  .picture-and-description {
+      
+    display: flex;
+    gap: 4rem;
+  
+
+    .picture {
+        
+        box-shadow: 6px 6px 0px 0px white;
+        transition: .3s;
+
+        &:hover {
+
+            box-shadow: 6px 6px 0px 0px rgba(90,102,255,1);
+        }
+
+        .picture-img {
+
+            width: 100%;
+        }
+    }
+
+    .description {
+
+        font-size: 1.8rem;
+        width: 50rem;
+    }
+   }
+  }
+}
+

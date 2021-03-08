@@ -114,6 +114,36 @@
             }
         }
     }
+
+    article {
+
+        .bio-container {
+
+            .tittle {
+
+                h1 {
+
+                    z-index: 100;
+                }
+            }
+
+            .picture-and-description{
+
+                flex-direction: column;
+
+                .picture {
+
+                    width: 60rem;
+                }
+
+                .description {
+
+                    font-size: 2.4rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -450,6 +480,44 @@
 
                 width: 100%;
                 max-width: none;
+            }
+        }
+    }
+
+    article {
+
+        width: 90%;
+        margin: auto;
+
+        .watermark {
+
+            display: none;
+        }
+
+        .bio-container {
+
+            .tittle {
+
+                h1 {
+
+                    font-size: 13rem;
+                }
+            }
+            
+            .picture-and-description {
+
+                flex-direction: column;
+
+                .picture {
+
+                    width: 100%;
+                }
+
+                .description {
+                    width: 100%;
+                    margin: auto;
+                    font-size: 2.6rem;
+                }
             }
         }
     }

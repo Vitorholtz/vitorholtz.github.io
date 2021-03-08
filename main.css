@@ -809,6 +809,7 @@ article .bio-container .tittle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2rem;
 }
 
 article .bio-container .tittle h1 {
@@ -846,6 +847,24 @@ article .bio-container .picture-and-description .picture .picture-img {
 article .bio-container .picture-and-description .description {
   font-size: 1.8rem;
   width: 50rem;
+}
+
+article .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8rem;
+  padding-bottom: 8rem;
+  width: 16rem;
+  gap: 6rem;
+  display: none;
+}
+
+article .social-icons i {
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 130rem) {
@@ -1183,7 +1202,7 @@ article .bio-container .picture-and-description .description {
   }
   article {
     width: 90%;
-    margin: 0 auto 24rem auto;
+    margin: 32rem auto 8rem auto;
   }
   article .watermark {
     display: none;
@@ -1204,6 +1223,11 @@ article .bio-container .picture-and-description .description {
     width: 100%;
     margin: auto;
     font-size: 2.6rem;
+  }
+  article .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

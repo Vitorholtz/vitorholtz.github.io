@@ -49,6 +49,7 @@ nav {
   position: fixed;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 1000;
 }
 
 nav::before {
@@ -106,6 +107,31 @@ nav .profile .profile-picture h2 {
   z-index: -2;
   -webkit-animation: leftslide 1.4s ease-in-out;
           animation: leftslide 1.4s ease-in-out;
+}
+
+nav .profile .profile-picture .language-bar {
+  position: absolute;
+  bottom: 0;
+  right: -4rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+nav .profile .profile-picture .language-bar li:first-child {
+  font-size: 3rem;
+  color: #5A66FF;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+nav .profile .profile-picture .language-bar li:last-child {
+  cursor: pointer;
+}
+
+nav .profile .profile-picture .language-bar li:last-child:hover {
+  color: #5A66FF;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 nav .profile .skills-toggle {

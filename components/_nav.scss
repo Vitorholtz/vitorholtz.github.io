@@ -5,6 +5,7 @@ nav {
     background-color: $gray;
     position: fixed;
     transition: 1s;
+    z-index: 1000;
 
     &::before {
         content: '';
@@ -23,6 +24,7 @@ nav {
 
     .profile {
 
+    
         .profile-picture {
 
             position: relative;
@@ -67,6 +69,34 @@ nav {
                 z-index: -2;
                 animation: leftslide 1.4s ease-in-out;
 
+            }
+
+            .language-bar{
+
+                position: absolute;
+                bottom: 0;
+                right: -4rem;
+                font-size: 2rem;
+                line-height: 1.6;
+    
+                li:first-child {
+                    font-size: 3rem;
+                    color: $purple;
+                    font-weight: bold;
+                    pointer-events: none
+                }
+
+                li:last-child {
+
+                    cursor: pointer;
+
+                    &:hover {
+
+                        color: $purple;
+                        transition: .3s;
+                    }
+
+                }
             }
         }
 
@@ -225,7 +255,7 @@ nav {
                 }
             }
         }
-    
+
 
     .social-icons {
 

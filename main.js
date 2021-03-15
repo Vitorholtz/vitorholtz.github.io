@@ -189,6 +189,8 @@ hamburgerToggle.addEventListener('click', () => {
 
 })
 
+window.onload
+
 
 
 

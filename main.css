@@ -793,7 +793,7 @@ article .bio-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 80rem;
+  max-width: 88rem;
   margin: 0 auto;
 }
 
@@ -917,6 +917,9 @@ article .social-icons i {
   }
   section .slider-and-description .slider-and-description-container .description-and-button .btn {
     font-size: 7rem;
+  }
+  article .bio-container {
+    max-width: 68rem;
   }
   article .bio-container .tittle h1 {
     z-index: 100;
@@ -1198,6 +1201,9 @@ article .social-icons i {
   }
   article .watermark {
     display: none;
+  }
+  article .bio-container {
+    max-width: 100%;
   }
   article .bio-container .tittle h1 {
     font-size: 13rem;
